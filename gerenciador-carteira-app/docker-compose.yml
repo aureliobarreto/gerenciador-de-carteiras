@@ -1,0 +1,12 @@
+version: '3'
+services:
+  angular:
+    image: gerenciador-carteiras:2.0
+    working_dir: /app
+    command: npm start
+    ports:
+      - "4200:4200"
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.angular/cache
