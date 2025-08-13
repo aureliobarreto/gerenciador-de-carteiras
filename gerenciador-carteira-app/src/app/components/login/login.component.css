@@ -1,0 +1,84 @@
+.spacer {
+    flex: 1 1 auto;
+}
+
+.divider {
+    margin-top: 35px;
+    margin-bottom: 15px;
+    display: flex;
+    font-size: 14;
+    color: gray;
+    font-weight: 400;
+    gap: 20px; 
+    width: 75%;
+}
+.divider div {
+    align-items: center;
+    flex-grow: 1;
+    height: 1px;  
+    max-width: 85%;     
+    background-color: gray;
+ }
+
+.dialog-header {
+    display:flex;
+    align-items: center;   
+    padding: 16px;
+    
+    border-bottom: 1px solid #e0e0e0;
+}
+  
+.dialog-logo {
+    height: 45px;   
+    align-items: center; 
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .inputs{
+    width: 85%;    
+  }
+
+  .input-password{
+    width: 85%;
+    margin-bottom: 0px;    
+  }
+  .input-login {
+    width: 75%;
+    background: linear-gradient(to right, #F50C47, #AC26FB); /* substitua pelas cores desejadas */
+    color: white;    
+    cursor: pointer;    
+    border-radius: 5px; /* opcional, para bordas arredondadas */
+    transition: background 0.3s ease;
+  }
+  
+
+  /* google-login-button.component.css */
+.google-login-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #555;
+    border-color: #ccc;
+    background-color: white;
+    font-weight: 500;
+    padding: 8px 16px;
+    width: 100%;
+    max-width: 280px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .google-login-btn:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .google-icon {
+    width: 20px;
+    height: 20px;
+  }
+  

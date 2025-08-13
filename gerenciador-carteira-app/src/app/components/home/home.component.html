@@ -1,0 +1,38 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button aria-label="Menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <div class="app-logo-title">
+    <img src="logo.png" alt="Logo" class="app-logo" />
+  </div>
+
+  <span class="spacer"></span>
+
+  <button mat-button aria-label="Carteira" (click)="abrirCarteira()">
+    <mat-icon>account_balance_wallet</mat-icon>
+    <span>Carteira teste</span>
+  </button>
+
+  <button mat-icon-button [matMenuTriggerFor]="userMenu" aria-label="Usuário">
+    <mat-icon>account_circle</mat-icon>
+  </button>
+
+  <mat-menu #userMenu="matMenu">
+    <button mat-menu-item>
+      <mat-icon>person</mat-icon>
+      <span>Perfil</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>settings</mat-icon>
+      <span>Configurações</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>logout</mat-icon>
+      <span>Sair</span>
+    </button>
+  </mat-menu>
+</mat-toolbar>
+
+
+na na na 

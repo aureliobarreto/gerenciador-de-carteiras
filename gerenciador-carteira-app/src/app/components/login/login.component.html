@@ -1,0 +1,52 @@
+<div class="dialog-header">
+  
+    <img src="logo.png" alt="Logo" class="dialog-logo" />   
+    
+    <button mat-button (click)="close()">
+        <mat-icon>close</mat-icon>   
+    </button>
+</div>
+
+<mat-dialog-content>
+    <div class="form">
+        <mat-form-field class="inputs">
+            <mat-label>Email ou Usuário </mat-label>
+            <input matInput [(ngModel)]="email" />
+        </mat-form-field>
+
+        <mat-form-field class="input-password">
+            <mat-label>Senha</mat-label>
+            <input matInput [type]="hide() ? 'password' : 'text'" />
+            <button
+              mat-icon-button
+              matSuffix
+              (click)="clickEvent($event)"
+              [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="hide()"
+            >
+              <mat-icon>{{hide() ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field>
+          <button mat-button style="align-self: self-end;" >Esqueceu a senha?</button>
+          <button class="input-login" mat-raised-button (click)="login()">Entrar</button>
+
+          <div class="divider">
+            <div></div> 
+                <span>OU</span>
+            <div></div>            
+          </div>
+
+          <button mat-stroked-button class="google-login-btn">
+            <mat-icon svgIcon="google" class="google-icon"></mat-icon>
+            Entrar com o Google
+          </button>
+
+          <span>Ainda não tem uma conta?<button mat-button>Cadastre-se</button></span>
+
+    </div>
+</mat-dialog-content>
+
+
+
+
+
